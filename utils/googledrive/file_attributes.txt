@@ -1,0 +1,32 @@
+kind:                                           drive#file
+id:                                             1KxK4eYcEpzfdxPwsLYQ6MgL6P28UAOcMiZ7JwHpFwQ0
+name:                                           prototype
+mimeType:                                               application/vnd.google-apps.document
+starred:                                                False
+trashed:                                                False
+explicitlyTrashed:                                              False
+parents:                                                ['0ABpi6ehoKu_wUk9PVA']
+spaces:                                                 ['drive']
+version:                                                10
+webViewLink:                                            https://docs.google.com/document/d/1KxK4eYcEpzfdxPwsLYQ6MgL6P28UAOcMiZ7JwHpFwQ0/edit?usp=drivesdk
+iconLink:                                               https://drive-thirdparty.googleusercontent.com/16/type/application/vnd.google-apps.document
+hasThumbnail:                                           True
+thumbnailVersion:                                               4
+viewedByMe:                                             True
+viewedByMeTime:                                                 2019-11-23T04:09:22.248Z
+createdTime:                                            2019-11-23T04:09:08.392Z
+modifiedTime:                                           2019-11-23T04:09:22.248Z
+modifiedByMeTime:                                               2019-11-23T04:09:22.248Z
+modifiedByMe:                                           True
+owners:                                                 [{'kind': 'drive#user', 'displayName': 'Zack_axe', 'me': True, 'permissionId': '08106432760360101087', 'emailAddress': 'magician475@gmail.com'}]
+lastModifyingUser:                                              {'kind': 'drive#user', 'displayName': 'Zack_axe', 'me': True, 'permissionId': '08106432760360101087', 'emailAddress': 'magician475@gmail.com'}
+shared:                                                 False
+ownedByMe:                                              True
+capabilities:                                           {'canAddChildren': False, 'canChangeCopyRequiresWriterPermission': True, 'canChangeViewersCanCopyContent': True, 'canComment': True, 'canCopy': True, 'canDelete': True, 'canDownload': True, 'canEdit': True, 'canListChildren': False, 'canModifyContent': True, 'canMoveItemIntoTeamDrive': True, 'canMoveItemOutOfDrive': True, 'canReadRevisions': True, 'canRemoveChildren': False, 'canRename': True, 'canShare': True, 'canTrash': True, 'canUntrash': True}
+viewersCanCopyContent:                                          True
+copyRequiresWriterPermission:                                           False
+writersCanShare:                                                True
+permissions:                                            [{'kind': 'drive#permission', 'id': '08106432760360101087', 'type': 'user', 'emailAddress': 'magician475@gmail.com', 'role': 'owner', 'displayName': 'Zack_axe', 'deleted': False}]
+permissionIds:                                          ['08106432760360101087']
+quotaBytesUsed:                                                 0
+isAppAuthorized:                                                False
