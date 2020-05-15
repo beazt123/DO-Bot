@@ -1,13 +1,10 @@
 # Design Odyssey Telegram Chatbot
----
-This is a Telegram chatbot developed to assist in SUTD Design Odyssey's educational programmes. It features semi-automated workshop reminnders and also hosts important workshop information.
+This is a Telegram chatbot developed to assist in SUTD Design Odyssey's educational programmes. It features semi-automated workshop reminders and also hosts important workshop information.
 
 ## Motivation
----
 This project saw an opportunity space in the mobile platform as a place to communicate with the students, as emails and posters tend not to capture the attention of the students.
 
 ## API Reference
----
 Language: [Python Release Python 3.7.3 \| Python.org](https://www.python.org/downloads/release/python-373/)
 
 Python Telegram API: [Python Telegram](https://python-telegram-bot.readthedocs.io/en/stable/)
@@ -15,7 +12,6 @@ Python Telegram API: [Python Telegram](https://python-telegram-bot.readthedocs.i
 Telegram API: [Telegram Bot API](https://core.telegram.org/bots/api)
 
 ## Setup
----
 The following python libraries are used:
 - python telegram
 - pytz
