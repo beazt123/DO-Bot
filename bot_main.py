@@ -1,6 +1,5 @@
 import json
 import logging
-import traceback
 
 from utils.handlers.start_handler import start_handler
 from utils.handlers.resources_handler import resources_handler, resources_handler_callback
@@ -8,13 +7,12 @@ from utils.handlers.admin_handler import admin_handler, type_of_material
 from utils.handlers.briefing_handler import briefing_handler, briefing_handler_material_type
 from utils.handlers.feedback_handler import feedback_handler, enter_feedback
 from utils.handlers.notif_handler import notif_handler, subscribe_notifications
-
+from utils.handlers.error_handlers import forwardError
 from utils.handlers.admin_interface import PWDCHECK, ADMIN_ACTIONS, GET_DATE, GET_TIME, GET_NAME, GET_DESC, GET_REMARKS, REMIND_DATE, SELECTED_EVENT, DELETE_EVENT, admin_update, pwd_check, admin_actions, request_date, request_time, request_event_name, request_description, request_remarks, remind_date, selected_event, delete_event
 from utils.handlers.quit_handler import quit
 from utils.constants import BOT_TOKEN
 
-from telegram import Update, Bot
-from telegram import ParseMode
+from telegram import Update, Bot, ParseMode
 from telegram.ext import InlineQueryHandler, CommandHandler, CallbackQueryHandler, ConversationHandler, MessageHandler, Filters, Dispatcher, Updater
 
 logging.basicConfig(
@@ -68,15 +66,11 @@ dispatcher.add_handler(ConversationHandler(entry_points=[CommandHandler("damala"
 										   },
 										   fallbacks=[CommandHandler("quit",quit)]))
 
-def errMsg(ex):
-	log_bot = Bot("1134139462:AAFG6W0TXyZK6W227D8YtlnUrT-sJbmNUCQ")
-	error_msg = "```\n" + ''.join(traceback.format_tb(ex.__traceback__)) + '\n\n' + str(ex) + "\n```"
-	log_bot.send_message(547533879, error_msg,parse_mode=ParseMode.MARKDOWN)
-	logging.exception(ex)
+
 	
 def callback(update,context):
-	errMsg(context.error)
-	
+	forwardError(context.error)
+	logging.exception(context.error)
 dispatcher.add_error_handler(callback)
 
 print('5')

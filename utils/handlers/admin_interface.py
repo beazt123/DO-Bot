@@ -3,6 +3,7 @@ import telegram
 from telegram.ext import ConversationHandler
 from telegram import ReplyKeyboardMarkup, ReplyKeyboardRemove
 from .typing_action import send_typing_action
+from ..constants import ADMIN_USER_PSWD
 
 import boto3
 from boto3.dynamodb.conditions import Key, Attr
@@ -52,11 +53,11 @@ def pwd_check(update, context):
 	print('date and time below')
 	print(dt.datetime.now())
 
-	if get_pwd != 'damala' and get_pwd != 'Damala':
+	if get_pwd != ADMIN_USER_PSWD:
 		update.message.reply_text( "Wrong password! Exit...")
 		return ConversationHandler.END
 
-	elif get_pwd == 'damala' or get_pwd == 'Damala':												
+	elif get_pwd == ADMIN_USER_PSWD:												
 		update.message.reply_text( "Welcome admin!")
 		update.message.reply_text("What would you like to do?", reply_markup = ReplyKeyboardMarkup(admin_actions_keyboard))
 		return ADMIN_ACTIONS
